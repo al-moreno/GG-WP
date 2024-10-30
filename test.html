@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CardTemplate Id = "45FA4B4A-58E3-40F7-8829-58A7D15AA7E8" Height="8.25" Width="8.25" CustomSize="false" Name="FD-258 8x8 Card" xmlns="http://fulcrumbiometrics.com/Print2Card/PrintElements">
+  <Pages>
+    <Page Height="8.25" Width="8.25">
+      <!-- Fingerprint Images -->
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:right:thumb" ImpressionType="Rolled" X="05" Y="309" Width="160" Height="150" Mode="Both" />
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:right:index" ImpressionType="Rolled" X="165" Y="295" Width="160" Height="150" Mode="Both"/>
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:right:middle" ImpressionType="Rolled" X="320" Y="309" Width="160" Height="150" Mode="Both"/>
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:right:ring" ImpressionType="Rolled" X="495" Y="309" Width="160" Height="150" Mode="Both"/>
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:right:little" ImpressionType="Rolled" X="640" Y="309" Width="160" Height="150" Mode="Both"/>
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:left:thumb" ImpressionType="Rolled" X="05" Y="466" Width="160" Height="150" Mode="Both"/>
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:left:index" ImpressionType="Rolled" X="165" Y="466" Width="160" Height="150" Mode="Both"/>
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:left:middle" ImpressionType="Rolled" X="325" Y="466" Width="160" Height="150" Mode="Both"/>
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:left:ring" ImpressionType="Rolled" X="495" Y="466" Width="160" Height="150" Mode="Both"/>
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:left:little" ImpressionType="Rolled" X="640" Y="466" Width="160" Height="150" Mode="Both"/>
+      <ContentAlignedFingerprintImage Biolocation="biolocd:fingerprint:left:fourfinger@4{::little,::ring,::middle,::index}" ImpressionType="Flat" X="10" Y="595" Width="325" Height="200" Align="Top" />
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:left:thumb" ImpressionType="Flat" X="315" Y="608" Width="75" Height="200" Mode="Both" />
+      <CenteredFingerprintImage Biolocation="biolocd:fingerprint:right:thumb" ImpressionType="Flat" X="415" Y="608" Width="75" Height="200" Mode="Both" />
+      <ContentAlignedFingerprintImage Biolocation="biolocd:fingerprint:right:fourfinger@4{::index,::middle,::ring,::little}" ImpressionType="Flat" X="495" Y="595" Width="325" Height="200" Align="Top" />
+
+      <!-- Signature Field -->
+      <ScaledBiometricImage Biolocation="biolocd:signature:standard" X="38" Y="81" Height="30" Width="250" />
+      <!-- Operator Signature -->
+      <ScaledBiometricImage Biolocation="biolocd:signature:operator" X="88" Y="168" Height="30" Width="250" />
+    
+      <!-- Demographic Data -->
+      <!--Name Box-->
+      <ValueText Value="#2.018.3" X="335" Y="51" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|15"/>
+      <ValueText Value="#2.018.1" X="450" Y="51" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|15"/>
+      <ValueText Value="#2.018.2" X="557" Y="51" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|11"/>
+      <!--Residence Box-->
+      <ValueText Value="#2.041.1" X="28" Y="125" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|45"/>
+      <ValueText Value="#2.041.2" X="28" Y="142" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|45"/>
+      <!--Date Box-->
+      <ValueText Value="#2.038" X="10" Y="178" FontSize="5"/>
+      <!--Employer Box-->
+      <ValueText Value="#2.039.1" X="28" Y="205" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|45"/>
+      <ValueText Value="#2.039.2" X="28" Y="218" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.SplitStringWithHyphen" ConverterParameters="0|45"/>
+      <!--Reason Box-->
+      <ValueText Value="#2.037" X="28" Y="273" FontSize="7"/>
+      <!--Aliases Box-->
+      <ValueTextOccurence Value="#2.019" X="305" Y="96" Offset="0" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|20"/>
+      <ValueTextOccurence Value="#2.019" X="305" Y="106" Offset="1" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|20"/>
+      <ValueTextOccurence Value="#2.019" X="305" Y="116" Offset="2" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|20"/>
+      <!--Citizenship Box-->
+      <ValueText Value="#2.021" X="305" Y="155" FontSize="7"/>
+      <!--Your No. Box-->
+      <ValueText Value="#2.009" X="305" Y="189" FontSize="7"/>
+      <!--FBI No. Box-->
+      <ValueTextOccurence Value="#2.014" X="305" Y="220" FontSize="7" Offset="0" Converter="Fulcrum.LiveScan.Print2Card.Converters.ToUpperConverter"/>
+      <!--Armed Forces No. Box-->
+      <!--Social Security No. Box-->
+      <ValueTextOccurence Value="#2.016" X="305" Y="265" FontSize="7" Offset="0"/>
+      <!--Miscellaneous No. Box-->
+      <ValueTextOccurence Value="#2.017" X="305" Y="294" FontSize="7" Offset="0"/>
+      <!--ORI Box-->
+      <!--<ValueText Value="#1.008" X="483" Y="96"/>-->
+      <!--<ValueText Value="#1.009" X="493" Y="123"/>-->
+      <!--Sex Box-->
+      <ValueText Value="#2.024" X="464" Y="158" FontSize="7"/>
+      <!--Race Box-->
+      <ValueText Value="#2.025" X="496" Y="158" FontSize="7" Converter="Fulcrum.LiveScan.Print2Card.Converters.TruncateString" ConverterParameters="0|1"/>
+      <!--Height Box-->
+      <FormattedValueText Format="{#2.027.1}' {#2.027.2}&quot;" X="528" Y="158" FontSize="7"/>
+      <!--Weight Box-->
+      <ValueText Value="#2.029" X="573" Y="158" FontSize="7"/>
+      <!--Eyes Box-->
+      <ValueText Value="#2.031" X="610" Y="158" FontSize="7"/>
+      <!--Hair Box-->
+      <ValueText Value="#2.032" X="648" Y="158" FontSize="7"/>
+      <!--Date of Birth Box-->
+      <ValueText Value="#2.022" X="680" Y="130" FontSize="7"/>
+      <!--Place of Birth Box-->
+      <ValueText Value="#2.020" X="697" Y="158" FontSize="7"/>
+
+      <!-- Scanner and Printer Information -->
+      <ValueText Value="PRINTER_INFO" X="505" Y="615" FontSize="7" />
+      <ValueText Value="SCANNER_INFO" X="25" Y="611" FontSize="7" />
+      <StepChart Y="611" X="348" Width="0.70" Height="0.12" Steps="16" />
+      <BarChart Y="611" X="425" Width="0.70" Height="0.12" LineWidth="1" />
+    </Page>
+  </Pages>
+</CardTemplate>
+
